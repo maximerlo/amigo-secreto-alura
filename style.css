@@ -3,9 +3,10 @@
     --color-secondary: #FFF9EB;
     --color-tertiary: #C4C4C4;
     --color-button: #fe652b;
-    --color-button-hover: #e55720;
+    --color-button-hover: #68054c;
     --color-text: #444444;
     --color-white: #FFFFFF;
+    --color-yellow: #e6b421c3;
 }
 
 /* Estilos generales */
@@ -152,7 +153,10 @@ ul {
     background-color: var(--color-button);
     font-size: 16px;
 }
-
+.nuevo-juego{
+    margin-top: 5px;
+    background-color: var(--color-yellow) ;
+}
 .button-draw img {
     margin-right: 40px;
 }

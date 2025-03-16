@@ -1,5 +1,7 @@
 // El principal objetivo de este desafío es fortalecer tus habilidades en lógica de programación. Aquí deberás desarrollar la lógica para resolver el problema.
 let amigos = [];
+const listaAmigos = document.getElementById("listaAmigos");
+const resultadoSorteo = document.getElementById("resultado");
 
 //Función para agregar los nombres a la lista "amigos". También valida que no se ingrese un valor vacío o con sólo espacios, y ni que tampoco haya nombres repetidos
 function agregarAmigo(){
@@ -23,7 +25,6 @@ function agregarAmigo(){
 }
 //Función para mostrar
 function mostrarAmigos(){
-    let listaAmigos = document.getElementById("listaAmigos");
     listaAmigos.innerHTML = ""; //Limpia la lista actual
     
     let listaActualizada = "";// Variable para almacenar la lista completa para el HTML
@@ -37,12 +38,15 @@ function mostrarAmigos(){
 function sortearAmigo(){
     if(amigos.length > 0){
         let numeroAleatorio = Math.floor(Math.random() * amigos.length);//Genera un número aleatorio entre 0 y el largo del array
-        let resultadoSorteo = document.getElementById("resultado");
         resultadoSorteo.innerHTML = `El amigo secreto sorteado es: ${amigos[numeroAleatorio]}`; //Se imprime el nombre del amigo sorteado de la lista, de acuerdo al indice aleatorio que salió 
-        listaAmigos.innerHTML = ""; //limpia la lista una vez que se sortea el amigo
-        console.log(numeroAleatorio);
-        console.log(amigos[numeroAleatorio]);
+        listaAmigos.innerHTML = ""; //limpia la lista del DOM una vez que se sortea el amigo
     }else{
         alert("No hay ningún amigo para sortear. Por favor ingresa los nombres");
     }
+}
+
+function nuevoJuego(){
+    amigos = []
+    resultadoSorteo.innerHTML = ""; // Limpia el resultado del sorteo
+    listaAmigos.innerHTML = ""; // Limpia la lista de amigos en el DOM
 }
