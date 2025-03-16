@@ -1,7 +1,4 @@
-# amigo-secreto-alura
 # 🎁 Amigo Secreto
-
-
 
 > Una aplicación simple en JavaScript, HTML y CSS para realizar un sorteo de amigo secreto de manera interactiva.
 
@@ -58,7 +55,7 @@ Challenge-Amigo Secreto/
    ```
 2. Abre el archivo `index.html` en tu navegador.
 
-## 📌 Autores
+## 📌 Contribución
 
 Si deseas contribuir, siéntete libre de hacer un fork del proyecto y enviar un pull request.
 
