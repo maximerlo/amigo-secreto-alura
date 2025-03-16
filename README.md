@@ -44,8 +44,16 @@ Challenge-Amigo Secreto/
 4. Para jugar de nuevo aprieta el botón "Nuevo Juego" 
 
 ## 📸 Captura de pantalla
-
+Vista de las funciones de la app:
 ![Vista de la app](assets/vista-de-la-app.png)
+
+
+Agregando amigos a la lista:
+![Agregando nombres en la app](assets/app-lista.png)
+
+
+Sorteando amigo secreto:
+![Sorteando el amigo secreto](assets/app-sorteo.png)
 
 ## 🛠 Cómo ejecutar el proyecto
 
